@@ -5,7 +5,7 @@ from src.load import load_data
 def main():
     df_reviews, products_df = extract_data()
     combined_df = transform_data(df_reviews, products_df)
-    load_data(repo_url = "https://github.com/<your-username>/data_pipeline_product_reviews.git")  # publishes processed dataset
+    load_data(repo_url = "https://github.com/zn-2/data_pipeline_product_reviews.git")  # publishes processed dataset
     print("Pipeline completed successfully!")
 
 if __name__ == "__main__":
